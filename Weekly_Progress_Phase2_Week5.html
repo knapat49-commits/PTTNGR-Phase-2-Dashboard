@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Weekly Progress Phase 2 - Week 5 (17-Jun-26)</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; font-size: 10px; background: #fff; color: #000; padding: 10px; }
+.top-bar { display: flex; align-items: stretch; gap: 5px; margin-bottom: 6px; flex-wrap: wrap; }
+.week-badge { background: #FFFF00; border: 1px solid #888; font-weight: bold; font-size: 13px; padding: 4px 14px; display: flex; align-items: center; }
+.update-box { background: #FF66FF; border: 1px solid #888; font-weight: bold; padding: 4px 10px; display: flex; align-items: center; white-space: nowrap; }
+.group-status-header { background: #0070C0; color: #fff; font-weight: bold; font-size: 12px; padding: 4px 18px; border: 1px solid #888; display: flex; align-items: center; justify-content: center; }
+.location-status-header { background: #4472C4; color: #fff; font-weight: bold; font-size: 12px; padding: 4px 18px; border: 1px solid #888; flex: 1; display: flex; align-items: center; justify-content: center; }
+.main-layout { display: flex; gap: 6px; align-items: flex-start; }
+.left-panel { flex: 0 0 auto; width: 400px; }
+.right-panel { flex: 1; min-width: 0; }
+table { border-collapse: collapse; width: 100%; table-layout: fixed; }
+td, th { border: 1px solid #777; padding: 2px 3px; vertical-align: middle; text-align: center; overflow: hidden; }
+.sec-hdr td { background: #CDE5FF; font-weight: bold; font-size: 9.5px; }
+.col-hdr td { background: #CDE5FF; font-weight: bold; font-size: 9px; }
+.total-row td { background: #FFCC00; font-weight: bold; }
+.data-row td { font-size: 9px; }
+.perf-pos { color: #006600; } .perf-neg { color: #CC0000; }
+.section-gap { height: 5px; }
+.pbar-outer { width: 100%; background: #ddd; border-radius: 2px; height: 7px; display: block; margin-top: 1px; }
+.pbar-plan   { height: 7px; border-radius: 2px; background: #5B9BD5; display: block; }
+.pbar-actual { height: 7px; border-radius: 2px; background: #70AD47; display: block; }
+.right-panel table { font-size: 9px; }
+.loc-hdr-main th { background: #000; color: #fff; font-weight: bold; text-align: center; font-size: 9px; white-space: normal; word-break: break-word; }
+.loc-hdr-wtg td { font-weight: bold; text-align: center; font-size: 8px; }
+.loc-hdr-wtg .wtg-eng { background: #FFFF00; } .loc-hdr-wtg .wtg-con { background: #00B0F0; }
+.loc-data td { text-align: center; font-size: 9px; }
+.loc-data .td-loc { text-align: left; white-space: normal; word-break: break-word; }
+.grp-e td { background: #CCFFFF; } .grp-e-cell { background: #CCFFFF; }
+.accum-row td { font-weight: bold; text-align: right; font-size: 9px; background: #F2F2F2; }
+.accum-row .accum-val { text-align: center; color: #0070C0; font-weight: bold; }
+</style>
+<script>
+var _TS="20260708004617";
+setTimeout(function _chk(){
+  fetch(location.href,{cache:'no-store'})
+    .then(function(r){return r.text();})
+    .then(function(t){
+      var m=t.match(/var _TS=("\d+")/);
+      if(m&&m[1]!==JSON.stringify(_TS)){location.reload();}
+      else{setTimeout(_chk,8000);}
+    }).catch(function(){setTimeout(_chk,8000);});
+},8000);
+</script>
+</head>
+<body>
+<div class="top-bar">
+  <div class="week-badge">Week 5</div>
+  <div class="update-box">Update :&nbsp; 17-Jun-26</div>
+  <div class="group-status-header">GROUP WEEKLY STATUS</div>
+  <div class="update-box">Update :&nbsp; 17-Jun-26</div>
+  <div class="location-status-header">LOCATION WEEKLY STATUS</div>
+</div>
+<div class="main-layout">
+  <div class="left-panel">
+    <table>
+      <colgroup><col style="width:24px"><col style="width:32px"><col style="width:32px"><col style="width:60px"><col style="width:60px"><col style="width:52px"><col style="width:56px"><col style="width:60px"></colgroup>
+      <tr class="sec-hdr"><td colspan="3">OVERALL PROGRESS</td><td colspan="2">Master Plan Baseline Rev.0</td><td colspan="3">OVERALL Actual Progress</td></tr>
+      <tr class="col-hdr"><td>No.</td><td>WTG.</td><td>Group</td><td>Start</td><td>Finish</td><td>% Plan</td><td>% Actual</td><td>% Performance</td></tr>
+      <tr class="data-row"><td>2</td><td>30%</td><td>B</td><td>18-May-26</td><td>12-Jul-26</td><td>4.26%<br><span class="pbar-outer"><span class="pbar-plan" style="width:4.2625%"></span></span></td><td>2.55%<br><span class="pbar-outer"><span class="pbar-actual" style="width:2.553%"></span></span></td><td class="perf-neg">▼ -1.71%</td></tr>
+      <tr class="data-row"><td>3</td><td>20%</td><td>C</td><td>01-Jun-26</td><td>31-Jul-26</td><td>1.14%<br><span class="pbar-outer"><span class="pbar-plan" style="width:1.1375%"></span></span></td><td>1.81%<br><span class="pbar-outer"><span class="pbar-actual" style="width:1.807%"></span></span></td><td class="perf-pos">▲ +0.67%</td></tr>
+      <tr class="data-row"><td>4</td><td>20%</td><td>D</td><td>08-Jun-26</td><td>23-Aug-26</td><td>0.00%</td><td>1.51%<br><span class="pbar-outer"><span class="pbar-actual" style="width:1.512%"></span></span></td><td class="perf-pos">▲ +1.51%</td></tr>
+      <tr class="data-row"><td>5</td><td>20%</td><td>E</td><td>18-May-26</td><td>29-Jun-26</td><td>0.00%</td><td>3.37%<br><span class="pbar-outer"><span class="pbar-actual" style="width:3.372%"></span></span></td><td class="perf-pos">▲ +3.37%</td></tr>
+      <tr class="data-row"><td>6</td><td>10%</td><td>F</td><td>18-May-26</td><td>15-Sep-26</td><td>0.00%</td><td>0.62%<br><span class="pbar-outer"><span class="pbar-actual" style="width:0.6176%"></span></span></td><td class="perf-pos">▲ +0.62%</td></tr>
+      <tr class="total-row"><td colspan="5">Total</td><td>5.40%<br><span class="pbar-outer"><span class="pbar-plan" style="width:5.4%"></span></span></td><td>9.86%<br><span class="pbar-outer"><span class="pbar-actual" style="width:9.8616%"></span></span></td><td class="perf-pos">▲ +4.46%</td></tr>
+    </table>
+    <div class="section-gap"></div>
+    <table>
+      <colgroup><col style="width:24px"><col style="width:32px"><col style="width:32px"><col style="width:60px"><col style="width:60px"><col style="width:52px"><col style="width:56px"><col style="width:60px"></colgroup>
+      <tr class="sec-hdr"><td colspan="3">ENGINEERING PROGRESS</td><td colspan="2">Master Plan Baseline Rev.0</td><td colspan="3">ENGINEERING Actual Progress</td></tr>
+      <tr class="col-hdr"><td>No.</td><td>WTG.</td><td>Group</td><td>Start</td><td>Finish</td><td>% Plan</td><td>% Actual</td><td>% Performance</td></tr>
+      <tr class="data-row"><td>2</td><td>9%</td><td>B</td><td>18-May-26</td><td>12-Jul-26</td><td>4.26%<br><span class="pbar-outer"><span class="pbar-plan" style="width:4.2625%"></span></span></td><td>2.38%<br><span class="pbar-outer"><span class="pbar-actual" style="width:2.385%"></span></span></td><td class="perf-neg">▼ -1.88%</td></tr>
+      <tr class="data-row"><td>3</td><td>6%</td><td>C</td><td>01-Jun-26</td><td>31-Jul-26</td><td>1.14%<br><span class="pbar-outer"><span class="pbar-plan" style="width:1.1375%"></span></span></td><td>1.70%<br><span class="pbar-outer"><span class="pbar-actual" style="width:1.695%"></span></span></td><td class="perf-pos">▲ +0.56%</td></tr>
+      <tr class="data-row"><td>4</td><td>6%</td><td>D</td><td>08-Jun-26</td><td>23-Aug-26</td><td>0.00%</td><td>1.40%<br><span class="pbar-outer"><span class="pbar-actual" style="width:1.4%"></span></span></td><td class="perf-pos">▲ +1.40%</td></tr>
+      <tr class="data-row"><td>5</td><td>6%</td><td>E</td><td>18-May-26</td><td>29-Jun-26</td><td>0.00%</td><td>3.26%<br><span class="pbar-outer"><span class="pbar-actual" style="width:3.26%"></span></span></td><td class="perf-pos">▲ +3.26%</td></tr>
+      <tr class="data-row"><td>6</td><td>3%</td><td>F</td><td>18-May-26</td><td>15-Sep-26</td><td>0.00%</td><td>0.56%<br><span class="pbar-outer"><span class="pbar-actual" style="width:0.5616%"></span></span></td><td class="perf-pos">▲ +0.56%</td></tr>
+      <tr class="total-row"><td colspan="5">Total</td><td>5.40%<br><span class="pbar-outer"><span class="pbar-plan" style="width:5.4%"></span></span></td><td>9.30%<br><span class="pbar-outer"><span class="pbar-actual" style="width:9.3016%"></span></span></td><td class="perf-pos">▲ +3.90%</td></tr>
+    </table>
+    <div class="section-gap"></div>
+    <table>
+      <colgroup><col style="width:24px"><col style="width:32px"><col style="width:32px"><col style="width:60px"><col style="width:60px"><col style="width:52px"><col style="width:56px"><col style="width:60px"></colgroup>
+      <tr class="sec-hdr"><td colspan="3">CONSTRUCTION PROGRESS</td><td colspan="2">Master Plan Baseline Rev.0</td><td colspan="3">CONSTRUCTION Actual Progress</td></tr>
+      <tr class="col-hdr"><td>No.</td><td>WTG.</td><td>Group</td><td>Start</td><td>Finish</td><td>% Plan</td><td>% Actual</td><td>% Performance</td></tr>
+      <tr class="data-row"><td>2</td><td>21%</td><td>B</td><td>18-May-26</td><td>12-Jul-26</td><td>0.00%</td><td>0.17%<br><span class="pbar-outer"><span class="pbar-actual" style="width:0.168%"></span></span></td><td class="perf-pos">▲ +0.17%</td></tr>
+      <tr class="data-row"><td>3</td><td>14%</td><td>C</td><td>01-Jun-26</td><td>31-Jul-26</td><td>0.00%</td><td>0.11%<br><span class="pbar-outer"><span class="pbar-actual" style="width:0.112%"></span></span></td><td class="perf-pos">▲ +0.11%</td></tr>
+      <tr class="data-row"><td>4</td><td>14%</td><td>D</td><td>08-Jun-26</td><td>23-Aug-26</td><td>0.00%</td><td>0.11%<br><span class="pbar-outer"><span class="pbar-actual" style="width:0.112%"></span></span></td><td class="perf-pos">▲ +0.11%</td></tr>
+      <tr class="data-row"><td>5</td><td>14%</td><td>E</td><td>18-May-26</td><td>29-Jun-26</td><td>0.00%</td><td>0.11%<br><span class="pbar-outer"><span class="pbar-actual" style="width:0.112%"></span></span></td><td class="perf-pos">▲ +0.11%</td></tr>
+      <tr class="data-row"><td>6</td><td>7%</td><td>F</td><td>18-May-26</td><td>15-Sep-26</td><td>0.00%</td><td>0.06%<br><span class="pbar-outer"><span class="pbar-actual" style="width:0.056%"></span></span></td><td class="perf-pos">▲ +0.06%</td></tr>
+      <tr class="total-row"><td colspan="5">Total</td><td>0.00%</td><td>0.56%<br><span class="pbar-outer"><span class="pbar-actual" style="width:0.56%"></span></span></td><td class="perf-pos">▲ +0.56%</td></tr>
+    </table></div>
+  <div class="right-panel">
+    <table>
+      <colgroup><col style="width:22px"><col style="width:36px"><col style="width:30px"><col style="width:36px"><col style="width:82px"><col style="width:138px"><col style="width:38px"><col style="width:38px"><col style="width:38px"><col style="width:38px"><col style="width:38px"><col style="width:38px"><col style="width:38px"><col style="width:38px"><col style="width:44px"><col style="width:50px"></colgroup>
+      <tr class="loc-hdr-main"><th rowspan="4">No</th><th rowspan="4">Region</th><th rowspan="4">Group</th><th rowspan="4">Tag</th><th rowspan="4">RC</th><th rowspan="4">Location</th><th colspan="4" style="background:#FFFF00;color:#000;">Engineering</th><th colspan="4" style="background:#00B0F0;color:#000;">Construction</th><th colspan="2" style="background:#fff;color:#000;">Progress</th></tr>
+      <tr><th rowspan="2" style="background:#FFFF00;color:#000;font-weight:bold;font-size:8px;">Boring Log</th><th rowspan="2" style="background:#FFFF00;color:#000;font-weight:bold;font-size:8px;">Survey &amp;<br>Verify</th><th rowspan="2" style="background:#FFFF00;color:#000;font-weight:bold;font-size:8px;">Engineering<br>Document</th><th rowspan="2" style="background:#FFFF00;color:#000;font-weight:bold;font-size:8px;">Area Permit</th><th rowspan="2" style="background:#00B0F0;color:#000;font-weight:bold;font-size:8px;">Excavation</th><th rowspan="2" style="background:#00B0F0;color:#000;font-weight:bold;font-size:8px;">Inspection</th><th rowspan="2" style="background:#00B0F0;color:#000;font-weight:bold;font-size:8px;">Re-instate</th><th rowspan="2" style="background:#00B0F0;color:#000;font-weight:bold;font-size:8px;">Package</th><th rowspan="2" style="font-weight:bold;font-size:8px;">% Plan</th><th rowspan="2" style="font-weight:bold;font-size:8px;">% Actual</th></tr>
+      <tr></tr>
+      <tr class="loc-hdr-wtg"><td class="wtg-eng">WTG. 15%</td><td class="wtg-eng">WTG. 25%</td><td class="wtg-eng">WTG. 50%</td><td class="wtg-eng">WTG. 10%</td><td class="wtg-con">WTG. 50%</td><td class="wtg-con">WTG. 30%</td><td class="wtg-con">WTG. 10%</td><td class="wtg-con">WTG. 10%</td><td style="font-weight:bold;">100%</td><td style="font-weight:bold;">100%</td></tr>
+      <tr class="loc-data"><td>1</td><td rowspan="5" style="background:#FFC000; font-weight:bold;">3</td><td rowspan="3">B</td><td>B1</td><td style="font-size:8px;">RC04032</td><td class="td-loc">Rojana Industrial Park (Rayong)</td><td>0%</td><td>50%</td><td>10%</td><td>60%</td><td>0%</td><td>0%</td><td>0%</td><td>8%</td><td>15.50%<br><span class="pbar-outer"><span class="pbar-plan" style="width:15.5%"></span></span></td><td>7.61%<br><span class="pbar-outer"><span class="pbar-actual" style="width:7.61%"></span></span></td></tr>
+      <tr class="loc-data"><td>2</td><td>B2</td><td style="font-size:8px;">RC040321</td><td class="td-loc">Rojana Industrial Park (Rayong)</td><td>0%</td><td>50%</td><td>10%</td><td>60%</td><td>0%</td><td>0%</td><td>0%</td><td>8%</td><td>13.56%<br><span class="pbar-outer"><span class="pbar-plan" style="width:13.5625%"></span></span></td><td>7.61%<br><span class="pbar-outer"><span class="pbar-actual" style="width:7.61%"></span></span></td></tr>
+      <tr class="loc-data"><td>3</td><td>B3</td><td style="font-size:8px;">RC0401100001</td><td class="td-loc">Indorama Petrochemical Co., Ltd.</td><td>60%</td><td>50%</td><td>10%</td><td>60%</td><td>0%</td><td>0%</td><td>0%</td><td>8%</td><td>13.56%<br><span class="pbar-outer"><span class="pbar-plan" style="width:13.5625%"></span></span></td><td>10.31%<br><span class="pbar-outer"><span class="pbar-actual" style="width:10.31%"></span></span></td></tr>
+      <tr class="loc-data"><td>4</td><td rowspan="2">C</td><td>C1</td><td style="font-size:8px;">RC040221</td><td class="td-loc">Amata City Reducing Station</td><td>0%</td><td>50%</td><td>10%</td><td>50%</td><td>0%</td><td>0%</td><td>0%</td><td>8%</td><td>5.69%<br><span class="pbar-outer"><span class="pbar-plan" style="width:5.6875%"></span></span></td><td>7.31%<br><span class="pbar-outer"><span class="pbar-actual" style="width:7.31%"></span></span></td></tr>
+      <tr class="loc-data"><td>5</td><td>C2</td><td style="font-size:8px;">RC04011</td><td class="td-loc">Bangkok Polyester Public Co., Ltd.</td><td>60%</td><td>50%</td><td>10%</td><td>75%</td><td>0%</td><td>0%</td><td>0%</td><td>8%</td><td>5.69%<br><span class="pbar-outer"><span class="pbar-plan" style="width:5.6875%"></span></span></td><td>10.76%<br><span class="pbar-outer"><span class="pbar-actual" style="width:10.76%"></span></span></td></tr>
+      <tr class="loc-data"><td>6</td><td rowspan="3" style="background:#00B0F0; font-weight:bold;">1</td><td rowspan="2">D</td><td>D1</td><td style="font-size:8px;">RC044041</td><td class="td-loc">Esso (Thailand) Public Co., Ltd.</td><td>0%</td><td>50%</td><td>10%</td><td>67%</td><td>0%</td><td>0%</td><td>0%</td><td>8%</td><td>0.00%</td><td>7.81%<br><span class="pbar-outer"><span class="pbar-actual" style="width:7.81%"></span></span></td></tr>
+      <tr class="loc-data"><td>7</td><td>D2</td><td style="font-size:8px;">RC044043</td><td class="td-loc">Laem Chabang Industrial Estate</td><td>0%</td><td>50%</td><td>10%</td><td>50%</td><td>0%</td><td>0%</td><td>0%</td><td>8%</td><td>0.00%</td><td>7.31%<br><span class="pbar-outer"><span class="pbar-actual" style="width:7.31%"></span></span></td></tr>
+      <tr class="loc-data grp-e"><td>8</td><td rowspan="2" class="grp-e-cell">E</td><td>E1</td><td style="font-size:8px;">RC0631100003</td><td class="td-loc">Loyal Haieleung Copper (Thailand) Co., Ltd.</td><td>60%</td><td>100%</td><td>39%</td><td>75%</td><td>0%</td><td>0%</td><td>0%</td><td>8%</td><td>0.00%</td><td>18.86%<br><span class="pbar-outer"><span class="pbar-actual" style="width:18.86%"></span></span></td></tr>
+      <tr class="loc-data grp-e"><td>9</td><td rowspan="1" style="background:#FFFF00; font-weight:bold;">5</td><td>E2</td><td style="font-size:8px;">RC410101</td><td class="td-loc">Gangwal Textile Co., Ltd.</td><td>60%</td><td>50%</td><td>39%</td><td>67%</td><td>0%</td><td>0%</td><td>0%</td><td>8%</td><td>0.00%</td><td>14.86%<br><span class="pbar-outer"><span class="pbar-actual" style="width:14.86%"></span></span></td></tr>
+      <tr class="loc-data"><td>10</td><td rowspan="1" style="background:#7030A0;color:#fff; font-weight:bold;">2</td><td rowspan="1">F</td><td>F1</td><td style="font-size:8px;">RC06611</td><td class="td-loc">The Union Mosaic Industry Co., Ltd.</td><td>0%</td><td>47%</td><td>10%</td><td>20%</td><td>0%</td><td>0%</td><td>0%</td><td>8%</td><td>0.00%</td><td>6.18%<br><span class="pbar-outer"><span class="pbar-actual" style="width:6.1756%"></span></span></td></tr>
+      <tr class="accum-row"><td colspan="14" style="text-align:right;">Accumulate Plan %</td><td class="accum-val">5.40%</td><td></td></tr>
+      <tr class="accum-row"><td colspan="14" style="text-align:right;">Accumulate Actual %</td><td></td><td class="accum-val">9.86%</td></tr>
+    </table></div>
+</div>
+<div style="margin-top:14px;display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap;">
+  <div style="flex:1;min-width:540px;border:1px solid #bbb;border-radius:4px;padding:10px;background:#fff;">
+    <div style="font-weight:bold;font-size:11px;text-align:center;background:#0070C0;color:#fff;padding:4px;border-radius:2px;margin-bottom:8px;">Overall Weekly Project Progress</div>
+    <div style="position:relative;height:260px;"><canvas id="sc"></canvas></div>
+  </div>
+  <div style="flex:0 0 380px;border:1px solid #bbb;border-radius:4px;padding:10px;background:#fff;">
+    <div style="font-weight:bold;font-size:11px;text-align:center;background:#0070C0;color:#fff;padding:4px;border-radius:2px;margin-bottom:8px;">Group Weekly Status</div>
+    <div style="position:relative;height:260px;"><canvas id="bc"></canvas></div>
+  </div>
+</div>
+<script src="chart.umd.min.js"></script>
+<script>
+var lbl=["Wk 0", "Wk 1", "Wk 2", "Wk 3", "Wk 4", "Wk 5", "Wk 6", "Wk 7", "Wk 8", "Wk 9", "Wk 10", "Wk 11", "Wk 12", "Wk 13", "Wk 14", "Wk 15", "Wk 16", "Wk 17", "Wk 18", "Wk 19", "Wk 20", "Wk 21", "Wk 22", "Wk 23", "Wk 24", "Wk 25", "Wk 26", "Wk 27", "Wk 28", "Wk 29", "Wk 30", "Wk 31", "Wk 32", "Wk 33", "Wk 34", "Wk 35"],tor=[0.1, 0.45, 1.5, 2.55, 4.2, 5.95, 8.3346, 12.6521, 18.2937, 24.1909, 33.5333, 40.8996, 47.7992, 53.3151, 55.4527, 57.7709, 62.2825, 67.861, 73.4454, 75.6755, 79.8572, 83.9804, 89.3737, 92.7408, 95.8338, 98.9975, 99.4103, 99.8231, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],mp=[0.1, 1.576, 5.5747, 11.6579, 20.9668, 30.7572, 42.0726, 52.4429, 64.4053, 70.0918, 75.4776, 79.7449, 83.7483, 88.863, 93.5203, 97.7367, 99.6615, 99.8438, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],act=[0.1, 0.5584, 1.3173, 2.4998, 5.3082, 9.8616, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null];
+new Chart(document.getElementById('sc'),{type:'line',data:{labels:lbl,datasets:[
+  {label:'TOR',data:tor,borderColor:'#A9D18E',backgroundColor:'transparent',borderWidth:2,borderDash:[6,3],pointRadius:0,tension:0.4},
+  {label:'Master Plan',data:mp,borderColor:'#5B9BD5',backgroundColor:'rgba(91,155,213,0.08)',borderWidth:2.5,pointRadius:0,tension:0.4},
+  {label:'Actual',data:act,borderColor:'#FF6600',backgroundColor:'rgba(255,102,0,0.12)',borderWidth:2.5,pointRadius:4,pointBackgroundColor:'#FF6600',spanGaps:false,tension:0.4}
+]},options:{responsive:true,maintainAspectRatio:false,
+  interaction:{mode:'index',intersect:false},
+  plugins:{legend:{position:'top',labels:{font:{family:'Arial',size:10},boxWidth:16}},
+    tooltip:{callbacks:{label:function(c){return c.parsed.y!==null?c.dataset.label+': '+c.parsed.y.toFixed(2)+'%':null;}}}},
+  scales:{x:{ticks:{font:{family:'Arial',size:8},maxRotation:45},grid:{color:'rgba(0,0,0,0.06)'}},
+    y:{min:0,max:100,ticks:{font:{family:'Arial',size:9},callback:function(v){return v+'%';},stepSize:10},
+      grid:{color:'rgba(0,0,0,0.06)'},title:{display:true,text:'Cumulative Progress (%)',font:{size:9}}}}}
+});
+var bg=["B", "C", "D", "E", "F"],bp=[4.2625, 1.1375, 0, 0, 0],ba=[2.553, 1.807, 1.512, 3.372, 0.6176],bperf=[-1.7095, 0.6695, 1.512, 3.372, 0.6176],bbg=["rgba(255,80,80,0.45)", "rgba(112,173,71,0.40)", "rgba(112,173,71,0.40)", "rgba(112,173,71,0.40)", "rgba(112,173,71,0.40)"],bbd=["#CC0000", "#375623", "#375623", "#375623", "#375623"];
+new Chart(document.getElementById('bc'),{type:'bar',data:{labels:bg,datasets:[
+  {label:'% Plan',data:bp,backgroundColor:'#5B9BD5',borderColor:'#2F75B6',borderWidth:1},
+  {label:'% Actual',data:ba,backgroundColor:'#70AD47',borderColor:'#375623',borderWidth:1},
+  {label:'% Performance',data:bperf,backgroundColor:bbg,borderColor:bbd,borderWidth:1}
+]},options:{responsive:true,maintainAspectRatio:false,
+  plugins:{legend:{position:'top',labels:{font:{family:'Arial',size:10},boxWidth:14}},
+    tooltip:{callbacks:{label:function(c){return c.dataset.label+': '+(c.parsed.y>=0?'+':'')+c.parsed.y.toFixed(2)+'%';}}}},
+  scales:{x:{ticks:{font:{family:'Arial',size:10}},grid:{display:false}},
+    y:{ticks:{font:{family:'Arial',size:9},callback:function(v){return v+'%';}},
+      grid:{color:'rgba(0,0,0,0.07)'},title:{display:true,text:'Progress (%)',font:{size:9}}}}}
+});
+</script>
+<div style="margin-top:14px;border:1px solid #bbb;border-radius:4px;padding:10px;background:#fff;"><div style="font-weight:bold;font-size:11px;text-align:center;background:#0070C0;color:#fff;padding:4px;border-radius:2px;margin-bottom:10px;">COST PERFORMANCE &nbsp;|&nbsp; SVO: 201019973010 &nbsp;|&nbsp; As of: </div><div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;"><div style="flex:1;min-width:90px;border:1px solid #ddd;border-radius:4px;padding:8px 4px;text-align:center;background:#fff;"><div style="font-size:18px;font-weight:bold;color:#222;">380</div><div style="font-size:9px;color:#666;margin-top:2px;">Plan MHRS</div></div><div style="flex:1;min-width:90px;border:1px solid #ddd;border-radius:4px;padding:8px 4px;text-align:center;background:#fff;"><div style="font-size:18px;font-weight:bold;color:#222;">38</div><div style="font-size:9px;color:#666;margin-top:2px;">Act Normal</div></div><div style="flex:1;min-width:90px;border:1px solid #ddd;border-radius:4px;padding:8px 4px;text-align:center;background:#fff;"><div style="font-size:18px;font-weight:bold;color:#222;">0</div><div style="font-size:9px;color:#666;margin-top:2px;">Act OT</div></div><div style="flex:1;min-width:90px;border:1px solid #ddd;border-radius:4px;padding:8px 4px;text-align:center;background:#fff;"><div style="font-size:18px;font-weight:bold;color:#222;">38</div><div style="font-size:9px;color:#666;margin-top:2px;">Total Act MHRS</div></div><div style="flex:1;min-width:90px;border:1px solid #ddd;border-radius:4px;padding:8px 4px;text-align:center;background:#fff;"><div style="font-size:18px;font-weight:bold;color:#222;">2,567</div><div style="font-size:9px;color:#666;margin-top:2px;">ETC Mhrs</div></div><div style="flex:1;min-width:90px;border:1px solid #ddd;border-radius:4px;padding:8px 4px;text-align:center;background:#fff;"><div style="font-size:18px;font-weight:bold;color:#222;">2,605</div><div style="font-size:9px;color:#666;margin-top:2px;">EAC MHRS</div></div><div style="flex:1;min-width:90px;border:1px solid #ddd;border-radius:4px;padding:8px 4px;text-align:center;background:#fff;"><div style="font-size:18px;font-weight:bold;color:#CC0000;">-2,225</div><div style="font-size:9px;color:#666;margin-top:2px;">Variance MHRS</div></div></div><table style="width:100%;border-collapse:collapse;font-size:10px;"><colgroup><col style="width:32%"><col style="width:12%"><col style="width:14%"><col style="width:10%"><col style="width:12%"><col style="width:12%"><col style="width:8%"></colgroup><tr><th style="background:#D9D9D9;padding:4px 6px;font-size:10px;">Detail</th><th style="background:#D9D9D9;padding:4px 6px;font-size:10px;">Plan (BG)</th><th style="background:#D9D9D9;padding:4px 6px;font-size:10px;">Act Cost to Date</th><th style="background:#D9D9D9;padding:4px 6px;font-size:10px;">Commit</th><th style="background:#D9D9D9;padding:4px 6px;font-size:10px;">ETC Cost</th><th style="background:#D9D9D9;padding:4px 6px;font-size:10px;">EAC Cost</th><th style="background:#D9D9D9;padding:4px 6px;font-size:10px;">%</th></tr><tr style="background:#fff;"><td style="text-align:left;padding-left:14px;font-weight:normal;padding:3px 6px;">Revenue</td><td>1,050,000</td><td>437,500</td><td><span style="color:#999;">—</span></td><td>612,500</td><td style="font-weight:normal;">1,050,000</td><td><span style="color:#999;">—</span></td></tr><tr style="background:#fff;"><td style="text-align:left;padding-left:14px;font-weight:normal;padding:3px 6px;">MH Cost</td><td>129,040</td><td>11,139</td><td><span style="color:#999;">—</span></td><td>105,742</td><td style="font-weight:normal;">116,881</td><td>11%</td></tr><tr style="background:#fff;"><td style="text-align:left;padding-left:14px;font-weight:normal;padding:3px 6px;">Variable Cost</td><td>525,000</td><td>526,050</td><td><span style="color:#999;">—</span></td><td><span style="color:#999;">—</span></td><td style="font-weight:normal;">526,050</td><td>50%</td></tr><tr style="background:#fff;"><td style="text-align:left;padding-left:14px;font-weight:normal;padding:3px 6px;">Material Cost</td><td>525,000</td><td>526,050</td><td><span style="color:#999;">—</span></td><td><span style="color:#999;">—</span></td><td style="font-weight:normal;">526,050</td><td><span style="color:#999;">—</span></td></tr><tr style="background:#F2F2F2;"><td style="text-align:left;font-weight:bold;padding:3px 6px;">Total Direct Cost</td><td>654,040</td><td>537,189</td><td><span style="color:#999;">—</span></td><td>105,742</td><td style="font-weight:bold;">642,931</td><td>61%</td></tr><tr style="background:#fff;"><td style="text-align:left;padding-left:14px;font-weight:normal;padding:3px 6px;">Contribution Margin</td><td>395,960</td><td><span style="color:#CC0000;">(99,689)</span></td><td><span style="color:#999;">—</span></td><td><span style="color:#999;">—</span></td><td style="font-weight:normal;">407,069</td><td>39%</td></tr><tr style="background:#fff;"><td style="text-align:left;padding-left:14px;font-weight:normal;padding:3px 6px;">Allocation Cost</td><td><span style="color:#999;">—</span></td><td>191,360</td><td><span style="color:#999;">—</span></td><td><span style="color:#999;">—</span></td><td style="font-weight:normal;">375,316</td><td>36%</td></tr><tr style="background:#F2F2F2;"><td style="text-align:left;font-weight:bold;padding:3px 6px;">Total Cost (Direct+OH)</td><td><span style="color:#999;">—</span></td><td>728,548</td><td><span style="color:#999;">—</span></td><td><span style="color:#999;">—</span></td><td style="font-weight:bold;">1,018,246</td><td>97%</td></tr><tr style="background:#fff;"><td style="text-align:left;padding-left:14px;font-weight:normal;padding:3px 6px;">Gross Margin</td><td><span style="color:#999;">—</span></td><td><span style="color:#CC0000;">(291,048)</span></td><td><span style="color:#999;">—</span></td><td><span style="color:#999;">—</span></td><td style="font-weight:normal;">31,754</td><td>3%</td></tr><tr style="background:#FFF2CC;"><td style="text-align:left;font-weight:bold;padding:3px 6px;">Total Cost (Inc. SG&amp;A and DP)</td><td>1,039,924</td><td>821,755</td><td><span style="color:#999;">—</span></td><td><span style="color:#999;">—</span></td><td style="font-weight:bold;">1,154,446</td><td><span style="color:#CC0000;font-weight:bold;">110%</span></td></tr><tr style="background:#FFF2CC;"><td style="text-align:left;font-weight:bold;padding:3px 6px;">Net Income</td><td>8,061</td><td><span style="color:#999;">—</span></td><td><span style="color:#999;">—</span></td><td><span style="color:#999;">—</span></td><td style="font-weight:bold;"><span style="color:#CC0000;">(104,446)</span></td><td><span style="color:#CC0000;">-10%</span></td></tr></table></div>
+</body>
+</html>
